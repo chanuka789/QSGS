@@ -1,6 +1,6 @@
 # QS Global Solutions
 
-This repository contains the redesigned QS Global Solutions website implemented in Next.js 14 with Tailwind CSS, following the approved brief and plan while preserving existing content, SEO metadata, and URLs.
+This repository contains the redesigned QS Global Solutions website implemented in Next.js 14 with Tailwind CSS, following the approved brief and plan while preserving existing content, SEO metadata, and URLs. It also retains the accompanying redesign brief and execution plan for reference.
 
 - **Document**: [Website Redesign Project Brief](docs/website-redesign-brief.md)
 - **Plan**: [Implementation Plan](docs/implementation-plan.md)
