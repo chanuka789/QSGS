@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { ContactForm } from '@/components/ContactForm';
 import { Hero } from '@/components/Hero';
 import { pageMeta, regions } from '@/content/site';
