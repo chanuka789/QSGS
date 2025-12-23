@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { Hero } from '@/components/Hero';
 import { ServiceGrid } from '@/components/ServiceGrid';
 import { ProcessTimeline } from '@/components/ProcessTimeline';

@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { ServiceDetail } from '@/components/ServiceDetail';
 import { ServiceTabs } from '@/components/ServiceTabs';
 import { pageMeta } from '@/content/site';
