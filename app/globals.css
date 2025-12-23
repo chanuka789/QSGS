@@ -1,0 +1,76 @@
+@import 'aos/dist/aos.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --radius: 12px;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-neutral-100 text-neutral-900 antialiased;
+}
+
+a {
+  @apply text-secondary hover:text-primary transition-colors;
+}
+
+.section-shell {
+  @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.card {
+  @apply bg-white shadow-card rounded-[var(--radius)] border border-neutral-200/60 backdrop-blur;
+}
+
+.hero-overlay {
+  background-image: var(--hero-image, url('https://images.unsplash.com/photo-1529429617124-aee1f1650a5c?auto=format&fit=crop&w=1600&q=80')),
+    radial-gradient(circle at 20% 20%, rgba(45, 91, 255, 0.2), transparent 35%),
+    radial-gradient(circle at 80% 0%, rgba(12, 45, 87, 0.18), transparent 30%);
+  background-size: cover, auto, auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.button-primary {
+  @apply inline-flex items-center gap-2 rounded-full bg-secondary px-5 py-3 text-white shadow-card transition-transform duration-200 hover:-translate-y-0.5 hover:shadow-xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary;
+}
+
+.button-ghost {
+  @apply inline-flex items-center gap-2 rounded-full border border-secondary px-5 py-3 text-secondary bg-white transition-transform duration-200 hover:-translate-y-0.5 hover:shadow-card focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary;
+}
+
+.badge {
+  @apply inline-flex items-center gap-2 rounded-full bg-white/80 px-3 py-1 text-sm text-neutral-800 shadow-card backdrop-blur;
+}
+
+.grid-auto-fit {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
